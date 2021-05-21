@@ -1,0 +1,317 @@
+
+/*HOME*/
+/*GLOBAL*/
+$pink: #FA617B;
+$dark-blue: #2F4056;
+$mid-blue: #4D798F;
+$light-blue: #00B8B3;
+$white: #EDE9E5;
+$black: #333333;
+$lato: 'Lato', sans-serif;
+body{
+    background: $white;
+    overflow-x: hidden;
+}
+
+.sub-title-white{
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 24pt;
+    color: $white;
+}
+.sub-title-black{
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 24pt;
+    color: $black;
+}
+
+/*TOP VAR*/
+.container-fluid{
+    margin: 0%;
+    padding: 0%;
+}
+.top-var{
+    width: 100%; 
+    background: $dark-blue; 
+    color: $white;
+    font-family: $lato;
+    font-weight: 700;
+    position: fixed;
+    z-index: 9999999;
+}
+.top-nav{
+    padding: 1.5em 0em 1.5em 0em;
+    margin: 0%;
+    float: right;
+    position: relative;
+    right: 25em;
+}
+.top-nav-item{
+    padding: 0.6em 1em;
+    margin: 0%;
+    display: inline-block;
+}
+.logo{
+    margin: 1.5em;
+}
+.bell{
+    margin: 1em;
+    position:relative;
+    left: 47em;  
+}
+.user{
+    margin: 1em;
+    position:relative;
+    left: 47em;
+}
+#icon-pointer:hover{
+    cursor: pointer;
+} 
+.pink-Square-item:hover{
+    border: solid $pink;
+    padding: 0.5em;
+    cursor: pointer;
+}
+/*TOP VAR*/
+/*GLOBAL*/
+
+/*COVER PAGE*/
+.cover-page-img{
+background: url(../img/portada.png);
+text-align: center;
+color: $white;
+padding: 6em 1em 6.5em 0em;
+size: 1920 1080;
+}
+.cover-text1{
+    font-family: $lato ;
+    font-weight: 300  ;
+    font-size: 24pt;
+    line-height: 2em;
+    margin-top: 2em;
+}
+.cover-text2{
+    font-family: $lato;
+    font-weight: 700 ;
+    font-size: 29pt;
+}
+.searcher{
+    color: $dark-blue;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5em;
+    width: 50%;
+    padding: 0.5em;
+    font-family: $lato ;
+    font-weight: 400;
+    outline: none;
+    opacity: 60%;
+    z-index: 0;
+}
+.lupa{
+    position: relative;
+    left: 40em;
+    z-index: 1;
+}
+.lupa:hover{
+cursor: pointer;
+}
+/*COVER PAGE*/
+
+/*COMING SOON*/
+.coming-section{
+padding: 3em 0em 0em 4em;
+}
+.bold-img{
+    color: $black;
+    font-family: $lato;
+    font-weight: 700;
+}
+.img-padding{
+    padding: 1em 4.3em;
+}
+.img-size{
+    width: 208px; height: 208px;
+    padding: 0%;
+    cursor: pointer;
+    margin: 0em 1.6em 1em 0em;
+}
+.mayor-edad{
+    position: relative;
+    z-index: 5;
+    margin: 0%;
+    padding: 0%;
+    bottom: 12.5em;
+    left: 8.5em;
+    cursor: pointer;
+}
+/*COMING SOON*/
+
+/* RECENT EVENTS*/
+.recent-events-section{
+    background: $mid-blue;
+    padding: 3em 0em 3em 4em;
+}
+.recent-events-txt{
+    color:$white;
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16pt;
+    padding: 1em 0em 1em 0em;
+}
+.btn-see-more{
+    padding: 0.5em 3em;
+    background: $pink;
+    border: none;
+    color: $white;
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 14pt;
+    text-decoration: none;
+}
+.btn-see-more:hover{
+    color: $white;
+}
+.video{
+position: relative;
+left: 4.5em;
+top: 2em;
+}
+/*RECENT EVENTS*/
+
+/*STAY TUNE*/
+.stay-tune-section{
+    background: url(../img/redes.png);
+    padding: 3em 0em 5.8em 4em;
+}
+.stay-tune-txt{
+    color:$white;
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16pt;
+}
+.stay-tune-txt-position{
+    position: relative;
+    top: 3em;
+}
+.stay-tune-icons-position{
+    margin-left: 20em;
+}
+.stay-tune-icons{
+margin: 5em 7em 0em 0em;
+}
+/*STAY TUNE*/
+
+/*SHARE*/
+.share-section{
+    padding: 3em 0em 2em 4em;
+}
+.share-text{
+    color: $black;
+    font-family: $lato;
+    font-weight: 300;
+    font-size: 16pt;
+    margin-top: 2em;
+    line-height: 2em;
+}
+.share-text-author{
+    color: $light-blue;
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 12pt;
+    margin-top: 1em;
+}
+/*SHARE*/
+
+/*CONTACT*/
+.contact-section{
+    background: url(../img/contact.png);
+    padding: 3em 0em 0em 4em;
+    width: 1370px; height: 600px;
+    }
+.labels{
+    color: $white;
+    font-family: $lato;
+    font-size: 12px;
+    margin-top: 1em;
+}
+.contact-text{
+    color: $white;
+    font-size: 13px;
+    font-family: $lato;
+    position: relative;
+    top: 5em;
+}
+.text-field{
+    width: 75%;
+    margin-left: 1em;
+    opacity: 50%;
+    color: $black;
+    font-size: 14px;
+    font-family: $lato;
+    border: none;
+    outline: none;
+}
+.message-txtField{
+    margin: 0em 0em 3em 1em;
+    opacity: 50%;
+    color: $black;
+    font-size: 14px;
+    font-family: $lato;
+    border: none;
+    outline: none;
+}
+.btn-message{
+    padding: 0.5em 3em;
+    background: $pink;
+    border: none;
+    color: $white;
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 14pt;
+    text-decoration: none;
+    width: 20%;
+    margin-left: 0.8em;
+}
+.btn-message:hover{
+    color: $white;
+}
+/*CONTACT*/
+
+/*FOOTER*/
+.footer{
+    background: $dark-blue;
+    color: $white;
+    font-size: 12px;
+    font-family:$lato;
+    font-weight: 700;
+    padding: 3em 0em 3em 5.5em;
+}
+.bottom-nav-item{
+    padding: 0em;
+    margin: 0%;
+    display: inline-block;
+}
+.bottom-nav-link{
+    text-decoration: none;
+    font-family: $lato;
+    font-size: 14px;
+    color: $white;
+    font-weight: 700;
+}
+.margin-bottom{
+    margin: 0em 0em 0em 1em;
+    padding: 0em;
+    position: relative;
+    right: 1em;
+}
+.bottom-simbol{
+    margin: 0em 1em 0em 1em;
+}
+/*FOOTER*/
+/*HOME*/
+
+/*DETAIL PAGE*/
+
+/*DETAIL PAGE*/
