@@ -26,12 +26,15 @@
     <div class="container-fluid">
         <nav class="top-var">
             <img src="./img/logo.png" alt="Logo de Event Finder" class="logo">
-            <img src="./img/bell.png" alt="icono de campana" class=" bell" id="icon-pointer">
-            <img src="./img/user.png" alt="Icono de usuario" class="user" id="icon-pointer">
+            <a href="#"><img src="./img/bell.png" alt="icono de campana" class=" bell"></a>
+            <a href="./register/register.html"><img src="./img/user.png" alt="Icono de usuario" class="user"></a>
             <ul class="top-nav">
-                <li class="top-nav-item"><span class="pink-Square-item">HOME</span> </li>
-                <li class="top-nav-item"><span class="pink-Square-item">CATEGORIES</span> </li>
-                <li class="top-nav-item"><span class="pink-Square-item">REGISTER</span> </li>
+                <li class="top-nav-item"><a href="./index.html" class="link-nav"><span
+                            class="pink-Square-item">HOME</span></a> </li>
+                <li class="top-nav-item"><a href="./categories/categories.html" class="link-nav"><span
+                            class="pink-Square-item">CATEGORIES</span></a> </li>
+                <li class="top-nav-item"><a href="./register/register.html" class="link-nav"><span
+                            class="pink-Square-item">REGISTER</span> </a></li>
             </ul>
         </nav>
     </div>
@@ -81,7 +84,7 @@
                 </div>
 
                 <div class="col-sm-3 ">
-                    <img src="./img/ev4.jpg" alt="imagen sobre musica" class="img-size">
+                    <a href="./evento_detalle/detalle.html"><img src="./img/ev4.jpg" alt="imagen sobre musica" class="img-size"></a>
                     <p><span class="bold-img">Lorem ipsum dolor sit amet </span> <br>
                         La Sabana, San José May 20th <br>
                         7pm - 11pm <br>
@@ -115,7 +118,7 @@
                         laoreet dolore magna aliquam erat volutpat. <br>
                     </p>
 
-                    <a href="#" class="btn-see-more">SEE MORE</a>
+                    <a href="./categories/categories.html" class="btn-see-more">SEE MORE</a>
                 </div>
 
                 <div class="col-sm video">
@@ -201,11 +204,11 @@
                 <div class="col-sm">
                     <h2 class="sub-title-white">CONTACT</h2>
                     <div class="row labels">
-                        <label for="">FULLNAME</label>
+                        <label for="">FULL NAME</label>
                         <input type="text" class="text-field">
                     </div>
                     <div class="row labels">
-                        <label for="">EMAIL</label>
+                        <label for="">E-MAIL</label>
                         <input type="text" class="text-field">
                     </div>
                 </div>
@@ -230,15 +233,15 @@
     <!--CONTACT-->
 
     <!-- FOOTER -->
-    <footer class="row   footer">
+    <footer class="row footer">
         <div class="col-10 pl-0">
             <nav class="nav-bottom">
                 <ul class="margin-bottom">
-                    <li class="bottom-nav-item"><a class="bottom-nav-link" href="#">HOME <span
+                    <li class="bottom-nav-item"><a class="bottom-nav-link" href="./index.html">HOME <span
                                 class="bottom-simbol">|</span></a></li>
-                    <li class="bottom-nav-item"><a class="bottom-nav-link" href="#">CATEGORIES<span
+                    <li class="bottom-nav-item"><a class="bottom-nav-link" href="./categories/categories.html">CATEGORIES<span
                                 class="bottom-simbol">|</span></a></li>
-                    <li class="bottom-nav-item"><a class="bottom-nav-link" href="#">REGISTER</a></li>
+                    <li class="bottom-nav-item"><a class="bottom-nav-link" href="./register/register.html">REGISTER</a></li>
                 </ul>
             </nav>
         </div>
