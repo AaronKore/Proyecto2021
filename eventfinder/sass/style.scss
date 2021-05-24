@@ -1,5 +1,3 @@
-
-/*HOME*/
 /*GLOBAL*/
 $pink: #FA617B;
 $dark-blue: #2F4056;
@@ -12,20 +10,17 @@ body{
     background: $white;
     overflow-x: hidden;
 }
-
-.sub-title-white{
+h2{
     font-family: $lato;
     font-weight: 700;
     font-size: 24pt;
+}
+.sub-title-white{
     color: $white;
 }
 .sub-title-black{
-    font-family: $lato;
-    font-weight: 700;
-    font-size: 24pt;
     color: $black;
 }
-
 /*TOP VAR*/
 .container-fluid{
     margin: 0%;
@@ -65,17 +60,29 @@ body{
     position:relative;
     left: 47em;
 }
-#icon-pointer:hover{
+.bell:hover{
     cursor: pointer;
 } 
+.user:hover{
+    cursor: pointer;
+}
 .pink-Square-item:hover{
     border: solid $pink;
     padding: 0.5em;
     cursor: pointer;
+    color: $white;
+}
+.link-nav{
+    text-decoration: none;
+    color: $white;
+    font-family: $lato;
+    font-size: 400;
+    font-size: 14pt;
 }
 /*TOP VAR*/
 /*GLOBAL*/
 
+/*HOME PAGE*/
 /*COVER PAGE*/
 .cover-page-img{
 background: url(../img/portada.png);
@@ -300,6 +307,9 @@ margin: 5em 7em 0em 0em;
     color: $white;
     font-weight: 700;
 }
+.bottom-nav-link:hover{
+    color: $white;
+}
 .margin-bottom{
     margin: 0em 0em 0em 1em;
     padding: 0em;
@@ -310,8 +320,9 @@ margin: 5em 7em 0em 0em;
     margin: 0em 1em 0em 1em;
 }
 /*FOOTER*/
-/*HOME*/
 
-/*DETAIL PAGE*/
-
-/*DETAIL PAGE*/
+@media only screen and (max-width: 600px) {
+    .top-var{
+        height: 1em;
+    }
+  }

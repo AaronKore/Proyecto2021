@@ -1,21 +1,20 @@
-/*HOME*/
 /*GLOBAL*/
 body {
   background: #EDE9E5;
   overflow-x: hidden;
 }
 
-.sub-title-white {
+h2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 24pt;
+}
+
+.sub-title-white {
   color: #EDE9E5;
 }
 
 .sub-title-black {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 24pt;
   color: #333333;
 }
 
@@ -65,7 +64,11 @@ body {
   left: 47em;
 }
 
-#icon-pointer:hover {
+.bell:hover {
+  cursor: pointer;
+}
+
+.user:hover {
   cursor: pointer;
 }
 
@@ -73,10 +76,20 @@ body {
   border: solid #FA617B;
   padding: 0.5em;
   cursor: pointer;
+  color: #EDE9E5;
+}
+
+.link-nav {
+  text-decoration: none;
+  color: #EDE9E5;
+  font-family: "Lato", sans-serif;
+  font-size: 400;
+  font-size: 14pt;
 }
 
 /*TOP VAR*/
 /*GLOBAL*/
+/*HOME PAGE*/
 /*COVER PAGE*/
 .cover-page-img {
   background: url(../img/portada.png);
@@ -331,6 +344,10 @@ body {
   font-weight: 700;
 }
 
+.bottom-nav-link:hover {
+  color: #EDE9E5;
+}
+
 .margin-bottom {
   margin: 0em 0em 0em 1em;
   padding: 0em;
@@ -343,6 +360,8 @@ body {
 }
 
 /*FOOTER*/
-/*HOME*/
-/*DETAIL PAGE*/
-/*DETAIL PAGE*/
+@media only screen and (max-width: 600px) {
+  .top-var {
+    height: 1em;
+  }
+}
