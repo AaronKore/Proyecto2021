@@ -76,61 +76,32 @@ h2{
 /*TOP VAR*/
 /*GLOBAL*/
 
-/*CONTENT*/
 .content{
-    position: relative;
-    right: 3em;
+    position: relative; 
     top: 8em;
+    right: 3em;
 }
 .img{
-    margin: 2em 0em 2em 0em;
+    width: 444px;
+    height: 265px;
+    left: 6em;
+    top: 5em;
+    margin-top: 2em;
 }
-.numbers{
-    font-family: $lato;
-    font-size: 16pt;
-    font-weight: 400;
-    color: $black;
-    margin-left: 6.5em;
-    cursor: pointer;
-}
-.number{
-    background: $pink;
-    color: $white;
-    padding: 5px;
-    font-size: 16pt;
-}
-.icon18{
-    position: relative;
-    right: 5em;
-    top: 6em;
-}
-.subtitle{
-    color: $black;
+.title{
     font-family: $lato;
     font-weight: 700;
-    font-size: 18pt;
+    font-size: 50pt;
+    color: $black;
+    text-align: center;
+    margin-top: 0.2em;
 }
-p{
+.txt{
     font-family: $lato;
     font-weight: 400;
+    font-size: 20pt;
     color: $black;
-}
-.important{
-    font-family: $lato;
-    font-weight: 600;
-    font-size: 14pt;
-    color: $black;
-}
-.btn{
-    background: $pink;
-    color: $white;
-    font-family: $lato;
-    font-weight: 700;
-    font-size: 18;
-    width: 50%;
-}
-.btn:hover{
-    color: $white;
+    text-align: center;
 }
 /*FOOTER*/
 .footer{
@@ -141,7 +112,7 @@ p{
     font-weight: 700;
     padding: 3em 0em 3em 5.5em;
     position: relative;
-    top: 12em;
+    top: 20em;
 }
 .bottom-nav-item{
     padding: 0em;

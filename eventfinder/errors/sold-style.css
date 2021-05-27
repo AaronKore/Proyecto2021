@@ -83,62 +83,34 @@ h2 {
 /*TOP VAR*/
 /*GLOBAL*/
 .content {
-  margin-top: 8em;
   position: relative;
+  top: 8em;
   right: 3em;
 }
 
-.labels {
-  color: #333333;
+.img {
+  width: 444px;
+  height: 265px;
+  left: 6em;
+  top: 5em;
+  margin-top: 2em;
+}
+
+.title {
   font-family: "Lato", sans-serif;
-  font-size: 12px;
-  margin: 2em 0em 2em 0em;
-  padding: 0%;
-}
-
-.text-field {
+  font-weight: 700;
+  font-size: 50pt;
   color: #333333;
-  font-size: 14px;
+  text-align: center;
+  margin-top: 0.2em;
+}
+
+.txt {
   font-family: "Lato", sans-serif;
-  outline: none;
-  padding: 0%;
-}
-
-.icons {
-  margin: 0em 1em 2em 0em;
-}
-
-.sing {
-  font-size: 14pt;
-  font-family: #00B8B3;
   font-weight: 400;
+  font-size: 20pt;
   color: #333333;
-  margin-bottom: 2em;
-}
-
-.link {
-  color: #00B8B3;
-  text-decoration: none;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-}
-
-.link:hover {
-  color: #00B8B3;
-}
-
-.btn {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 14pt;
-  color: #EDE9E5;
-  background: #FA617B;
-  margin: 0%;
-  width: 50%;
-}
-
-.btn:hover {
-  color: #EDE9E5;
+  text-align: center;
 }
 
 /*FOOTER*/
@@ -149,7 +121,8 @@ h2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   padding: 3em 0em 3em 5.5em;
-  margin-top: 2em;
+  position: relative;
+  top: 20em;
 }
 
 .bottom-nav-item {

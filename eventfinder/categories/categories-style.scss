@@ -82,6 +82,50 @@ h2{
     right: 3em;
 }
 
+/*CONTENT*/
+    .bold-img{
+        color: $black;
+        font-family: $lato;
+        font-weight: 700;
+    }
+    .img-padding{
+        padding: 1em 0em 0em 3em;
+        position: relative;
+        left: 5em;
+        top: 2em;
+        background: rgba(77, 121, 143, 20%);
+        margin-top: 1em;
+    }
+    .img-size{
+        width: 208px; height: 208px;
+        padding: 0%;
+        cursor: pointer;
+        margin: 0em 1.6em 1em 0em;
+    }
+    .mayor-edad{
+        position: relative;
+        z-index: 5;
+        margin: 0%;
+        padding: 0%;
+        bottom: 12.5em;
+        left: 8.5em;
+        cursor: pointer;
+    }
+    .sold{
+        font-family: $lato;
+        font-weight: 700;
+        color: $pink;
+    }
+    .sub-title-categorie{
+        font-family: $lato;
+        font-weight: 300;
+        font-size: 18pt;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+/*CONTENT*/
+
 /*FOOTER*/
 .footer{
     background: $dark-blue;
@@ -91,7 +135,7 @@ h2{
     font-weight: 700;
     padding: 3em 0em 3em 5.5em;
     position: relative;
-    top: 40.5em;
+    top: 20.5em;
 }
 .bottom-nav-item{
     padding: 0em;
@@ -118,3 +162,10 @@ h2{
     margin: 0em 1em 0em 1em;
 }
 /*FOOTER*/
+
+@media only screen and (max-width: 600px) {
+    .top-var{
+        height: 5em;
+        width: 100%;
+    }
+  }
