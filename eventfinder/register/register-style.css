@@ -9,13 +9,30 @@ h2 {
   font-weight: 700;
   font-size: 24pt;
 }
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 18pt;
+  }
+}
 
 .sub-title-white {
   color: #EDE9E5;
 }
+@media only screen and (max-width: 480px) {
+  .sub-title-white {
+    position: relative;
+    right: 2.2;
+  }
+}
 
 .sub-title-black {
   color: #333333;
+}
+@media only screen and (max-width: 480px) {
+  .sub-title-black {
+    position: relative;
+    right: 2.2;
+  }
 }
 
 /*TOP VAR*/
@@ -32,6 +49,14 @@ h2 {
   font-weight: 700;
   position: fixed;
   z-index: 9999999;
+}
+@media only screen and (max-width: 480px) {
+  .top-var {
+    width: 23.8em;
+    height: 5em;
+    position: fixed;
+    padding-bottom: 5em;
+  }
 }
 
 .top-nav {
@@ -51,17 +76,35 @@ h2 {
 .logo {
   margin: 1.5em;
 }
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 146, 5px;
+    height: 22.5px;
+    position: relative;
+    right: 1em;
+  }
+}
 
 .bell {
   margin: 1em;
   position: relative;
   left: 47em;
 }
+@media only screen and (max-width: 480px) {
+  .bell {
+    display: none;
+  }
+}
 
 .user {
   margin: 1em;
   position: relative;
   left: 47em;
+}
+@media only screen and (max-width: 480px) {
+  .user {
+    display: none;
+  }
 }
 
 #icon-pointer:hover {
@@ -87,6 +130,12 @@ h2 {
   position: relative;
   right: 3em;
 }
+@media only screen and (max-width: 480px) {
+  .content {
+    position: relative;
+    right: 1em;
+  }
+}
 
 .labels {
   color: #333333;
@@ -102,6 +151,11 @@ h2 {
   font-family: "Lato", sans-serif;
   outline: none;
   padding: 0%;
+}
+@media only screen and (max-width: 480px) {
+  .text-field {
+    font-size: 14pt;
+  }
 }
 
 .icons {
@@ -136,6 +190,11 @@ h2 {
   margin: 0%;
   width: 50%;
 }
+@media only screen and (max-width: 480px) {
+  .btn {
+    margin-top: 5em;
+  }
+}
 
 .btn:hover {
   color: #EDE9E5;
@@ -150,6 +209,12 @@ h2 {
   font-weight: 700;
   padding: 3em 0em 3em 5.5em;
   margin-top: 2em;
+}
+@media only screen and (max-width: 480px) {
+  .footer {
+    padding: 3em 0em 3em 1em;
+    margin-top: 10em;
+  }
 }
 
 .bottom-nav-item {

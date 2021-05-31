@@ -6,6 +6,9 @@ $light-blue: #00B8B3;
 $white: #EDE9E5;
 $black: #333333;
 $lato: 'Lato', sans-serif;
+@import 'media-queries';
+
+
 body{
     background: $white;
     overflow-x: hidden;
@@ -17,9 +20,17 @@ h2{
 }
 .sub-title-white{
     color: $white;
+
+    @include respond-to($phone){
+        margin-left: 0.7em;
+    }
 }
 .sub-title-black{
     color: $black;
+
+    @include respond-to($phone){
+        margin-left: 0.7em;
+    }
 }
 /*TOP VAR*/
 .container-fluid{
@@ -34,6 +45,13 @@ h2{
     font-weight: 700;
     position: fixed;
     z-index: 9999999;
+
+    @include respond-to($phone){
+        width: 23.8em;
+        height: 5em;
+        position: fixed;
+        padding: 0em 0em 5em 0em;
+    }
 }
 .top-nav{
     padding: 1.5em 0em 1.5em 0em;
@@ -49,16 +67,31 @@ h2{
 }
 .logo{
     margin: 1.5em;
+
+    @include respond-to($phone) {
+        width: 146,5px;
+        height: 22.5px;
+        position: relative;
+        right: 1em;
+    }
 }
 .bell{
     margin: 1em;
     position:relative;
     left: 47em;  
+
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 .user{
     margin: 1em;
     position:relative;
     left: 47em;
+
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 .bell:hover{
     cursor: pointer;
@@ -86,6 +119,11 @@ h2{
     position: relative;
     top: 9em;
     right: 2em;
+
+    @include respond-to($phone){
+        position: relative;
+        right: 9.5em;
+    }
 }
 .img{
     margin-top: 1em
@@ -96,6 +134,11 @@ h2{
     font-weight: 700;
     font-size: 18pt;
     margin: 0em 0em 1em 0em;
+
+    @include respond-to($phone){
+        margin-left: 1em;
+        width: 15em;
+    }
 }
 .icon18{
     position: relative;
@@ -107,66 +150,17 @@ h2{
     font-weight: 600;
     font-size: 14pt;
     color: $black;
-}
-/*STPES FORM*/
-.nav-steps{
-    padding-left: 0%;
-    bottom: 0.5em;
-    position: relative;
-    right: 1.5em;
-    }
-.nav-link{
-    color: $white;
-    font-size: 14pt;
-    font-family: $lato;
-    font-weight: 400;
-    text-decoration: none;
-    margin-right: 1em;
-}
-.nav-link:hover{
-    color: $white;
-}
-.nav-link2{
-    color: $black;
-    font-size: 14pt;
-    font-family: $lato;
-    font-weight: 400;
-    text-decoration: none;
-    margin-right: 1em;
-}
-.nav-link2:hover{
-    color: $black;
-}
-.nav-link-backgroud{
-    background: $mid-blue;
-    border-radius: 20px;
-    padding: 0.5em;
-}
-/*STEPS FORM*/
 
-/*LABELS*/
-.labels{
-    color: $black;
-    font-family: $lato;
-    font-size: 12px;
-    margin: 1em 0em 2.5em 0em;
-    padding-left: 0%;
-    position: relative;
-    right: 1.5em;
+    @include respond-to($phone){
+        margin-left: 1.3em;
+        padding: 0%;
+        width: 8em;
+    }
 }
-.text-field{
-    width: 95%;
-    margin-left: 1em;
-    color: $black;
-    font-size: 14px;
-    font-family: $lato;
-    outline: none;
-}
-/*LABELS*/
 
 /*BTNS*/
 .btn-confirm{
-    padding: 0.5em 3em;
+    padding: 0.5em 3em 0.8em 3em;
     background: $pink;
     border: none;
     color: $white;
@@ -178,6 +172,13 @@ h2{
     position: relative;
     left: 11em;
     top: 0.45em;
+
+    @include respond-to($phone){
+        position: relative;
+        top: 3em;
+        left: 9.2em;
+        padding: 0.5em 2em 0.8em 2em;
+    }
 }
 .btn-confirm:hover{
     color: $white;
@@ -204,7 +205,6 @@ h2{
     border: 1px solid $dark-blue;
     width: 50%;
   }
-
   #myBtn{
       background: $mid-blue;
       position: relative;
@@ -217,6 +217,14 @@ h2{
       font-size: 14pt;
       text-decoration: none;
       width: 40%;
+
+      @include respond-to($phone){
+        position: relative;
+        top: 1.2em;
+        bottom: 0%;
+        left: 0.6em;
+        width: 8em;
+      }
   }
   
   /*Close Button */
@@ -227,7 +235,6 @@ h2{
     font-weight: 700;
     font-family: $lato;
   }
-  
   .close:hover,
   .close:focus {
     color: $dark-blue;
@@ -242,6 +249,10 @@ h2{
     font-size: 18pt;
     padding: 0%;
     margin-top: 2em;
+
+    @include respond-to($phone){
+        margin-left: 0.9em;
+    }
 }
 
 /*FOOTER*/
@@ -254,6 +265,11 @@ h2{
     padding: 3em 0em 3em 5.5em;
     position: relative;
     top: 20em;
+
+    @include respond-to($phone){
+        padding: 3em 0em 3em 1em; 
+        width: 34em;
+    }
 }
 .bottom-nav-item{
     padding: 0em;

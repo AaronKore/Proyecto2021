@@ -6,6 +6,8 @@ $light-blue: #00B8B3;
 $white: #EDE9E5;
 $black: #333333;
 $lato: 'Lato', sans-serif;
+@import 'media-queries';
+
 body{
     background: $white;
     overflow-x: hidden;
@@ -14,12 +16,26 @@ h2{
     font-family: $lato;
     font-weight: 700;
     font-size: 24pt;
+
+    @include respond-to($phone){
+        font-size: 18pt;
+    }
 }
 .sub-title-white{
     color: $white;
+
+    @include respond-to($phone){
+        position: relative;
+        right: 2.2;
+    }
 }
 .sub-title-black{
-    color: $black;
+    color: $black; 
+
+    @include respond-to($phone){
+        position: relative;
+        right: 2.2;
+    }
 }
 /*TOP VAR*/
 .container-fluid{
@@ -34,7 +50,14 @@ h2{
     font-weight: 700;
     position: fixed;
     z-index: 9999999;
+
+    @include respond-to($phone){
+        width: 23.8em;
+        height: 5em;
+        position: fixed;
+    }
 }
+
 .top-nav{
     padding: 1.5em 0em 1.5em 0em;
     margin: 0%;
@@ -46,22 +69,42 @@ h2{
     padding: 0.6em 1em;
     margin: 0%;
     display: inline-block;
+
+    @include respond-to($phone){
+        display: none;
+    }
 }
 .logo{
     margin: 1.5em;
+
+    @include respond-to($phone) {
+        width: 146,5px;
+        height: 22.5px;
+        position: relative;
+        right: 1em;
+    }
 }
 .bell{
     margin: 1em;
     position:relative;
-    left: 47em;  
+    left: 47em; 
+    
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 .user{
     margin: 1em;
     position:relative;
     left: 47em;
+
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 .bell:hover{
     cursor: pointer;
+
 } 
 .user:hover{
     cursor: pointer;
@@ -89,7 +132,11 @@ background: url(../img/portada.png);
 text-align: center;
 color: $white;
 padding: 6em 1em 6.5em 0em;
-size: 1920 1080;
+
+@include respond-to($phone){
+    height: 35em;
+    width: 23.5em;
+}
 }
 .cover-text1{
     font-family: $lato ;
@@ -97,11 +144,22 @@ size: 1920 1080;
     font-size: 24pt;
     line-height: 2em;
     margin-top: 2em;
+
+    @include respond-to($phone) {
+    line-height: 2em;
+    margin-top: 1.5em;
+    font-size: 15pt;
+    }
 }
 .cover-text2{
     font-family: $lato;
     font-weight: 700 ;
     font-size: 29pt;
+
+    @include respond-to($phone){
+        margin-top: 0.5em;
+        font-size: 18pt;
+    }
 }
 .searcher{
     color: $dark-blue;
@@ -115,11 +173,22 @@ size: 1920 1080;
     outline: none;
     opacity: 60%;
     z-index: 0;
+
+    @include respond-to($phone) {
+        padding: 0.1em;
+        width: 90%;
+        margin-top: 2em;
+        font-size: 18pt;
+    }
 }
 .lupa{
     position: relative;
-    left: 40em;
+    left: 44em;
     z-index: 1;
+
+    @include respond-to($phone){
+        display: none;
+    }
 }
 .lupa:hover{
 cursor: pointer;
@@ -129,6 +198,12 @@ cursor: pointer;
 /*COMING SOON*/
 .coming-section{
 padding: 3em 0em 0em 4em;
+
+@include respond-to($phone){
+    padding: 3em 0em 0em 0.7em;
+
+}
+
 }
 .bold-img{
     color: $black;
@@ -136,22 +211,39 @@ padding: 3em 0em 0em 4em;
     font-weight: 700;
 }
 .img-padding{
-    padding: 1em 4.3em;    
+    padding: 1em 4.3em; 
+    
+    @include respond-to($phone){
+        position: relative;
+        right: 6em;
+    }
 }
 .img-size{
     width: 208px; height: 208px;
     padding: 0%;
     cursor: pointer;
     margin: 0em 1.6em 1em 0em;
+
+    @include respond-to($phone){
+        width: 323px; height: 323px;
+    }
 }
+
 .mayor-edad{
     position: relative;
     z-index: 5;
     margin: 0%;
     padding: 0%;
-    bottom: 12.5em;
+    bottom: 12em;
     left: 8.5em;
     cursor: pointer;
+
+    @include respond-to($phone){
+        width: 88px; height: 88px;
+        position: relative;
+        bottom: 17.5em;
+        left: 13.5em;
+    }
 }
 /*COMING SOON*/
 
@@ -159,6 +251,11 @@ padding: 3em 0em 0em 4em;
 .recent-events-section{
     background: $mid-blue;
     padding: 3em 0em 3em 4em;
+
+    @include respond-to($phone){
+        padding: 3em 0em 3em 0.7em;
+        width: 24.2em;
+    }
 }
 .recent-events-txt{
     color:$white;
@@ -176,6 +273,11 @@ padding: 3em 0em 0em 4em;
     font-weight: 700;
     font-size: 14pt;
     text-decoration: none;
+
+    @include respond-to($phone){
+        position: relative;
+        top: 11em;
+    }
 }
 .btn-see-more:hover{
     color: $white;
@@ -183,7 +285,12 @@ padding: 3em 0em 0em 4em;
 .video{
 position: relative;
 left: 4.5em;
-top: 2em;
+bottom: 4em;
+
+@include respond-to($phone){
+    position: relative;
+    left: 0em;
+}
 }
 /*RECENT EVENTS*/
 
@@ -191,6 +298,11 @@ top: 2em;
 .stay-tune-section{
     background: url(../img/redes.png);
     padding: 3em 0em 5.8em 4em;
+
+    @include respond-to($phone){
+        padding: 3em 0em 2em 0.7em;
+        width: 24.2em;
+    }
 }
 .stay-tune-txt{
     color:$white;
@@ -201,18 +313,37 @@ top: 2em;
 .stay-tune-txt-position{
     position: relative;
     top: 3em;
+
+    @include respond-to($phone){
+        position: relative;
+        top: 0em;
+    }
 }
 .stay-tune-icons-position{
     margin-left: 20em;
+
+    @include respond-to($phone){
+        margin-left: 1em;
+    }
 }
 .stay-tune-icons{
 margin: 5em 7em 0em 0em;
+
+@include respond-to($phone){
+    margin: 2em 1.8em 0em 0em; 
+    width: 31px; height: 28px;
+}
 }
 /*STAY TUNE*/
 
 /*SHARE*/
 .share-section{
     padding: 3em 0em 2em 4em;
+
+    @include respond-to($phone){
+        padding: 3em 0em 2em 0.7em;
+
+    }
 }
 .share-text{
     color: $black;
@@ -236,6 +367,11 @@ margin: 5em 7em 0em 0em;
     background: url(../img/contact.png);
     padding: 3em 0em 0em 4em;
     width: 1370px; height: 600px;
+
+    @include respond-to($phone){
+        padding: 3em 0em 0em 0.7em;
+        width: 24.2em; height: 600px;
+    }
     }
 .labels{
     color: $white;
@@ -249,6 +385,11 @@ margin: 5em 7em 0em 0em;
     font-family: $lato;
     position: relative;
     top: 5em;
+
+    @include respond-to($phone){
+        position: relative;
+        top: 0.5em;
+    }
 }
 .text-field{
     width: 75%;
@@ -259,6 +400,10 @@ margin: 5em 7em 0em 0em;
     font-family: $lato;
     border: none;
     outline: none;
+
+    @include respond-to($phone){
+        font-size: 14pt;
+    }
 }
 .message-txtField{
     margin: 0em 0em 3em 1em;
@@ -268,6 +413,11 @@ margin: 5em 7em 0em 0em;
     font-family: $lato;
     border: none;
     outline: none;
+
+    @include respond-to($phone){
+        height: 6em;
+        font-size: 14pt;
+    }
 }
 .btn-message{
     padding: 0.5em 3em;
@@ -280,6 +430,10 @@ margin: 5em 7em 0em 0em;
     text-decoration: none;
     width: 20%;
     margin-left: 0.8em;
+
+    @include respond-to($phone){
+        width: 70%;
+    }
 }
 .btn-message:hover{
     color: $white;
@@ -294,6 +448,11 @@ margin: 5em 7em 0em 0em;
     font-family:$lato;
     font-weight: 700;
     padding: 3em 0em 3em 5.5em;
+
+    @include respond-to($phone){
+        padding: 3em 0em 3em 1em;
+        width: 32.3em;
+    }
 }
 .bottom-nav-item{
     padding: 0em;
@@ -320,11 +479,3 @@ margin: 5em 7em 0em 0em;
     margin: 0em 1em 0em 1em;
 }
 /*FOOTER*/
-
-@media only screen and (max-width: 600px) {
-    .top-var{
-        height: 5em;
-        width: 100%;
-    }
-   
-  }

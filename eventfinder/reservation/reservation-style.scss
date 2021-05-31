@@ -6,6 +6,7 @@ $light-blue: #00B8B3;
 $white: #EDE9E5;
 $black: #333333;
 $lato: 'Lato', sans-serif;
+@import 'media-queries';
 body{
     background: $white;
     overflow-x: hidden;
@@ -17,9 +18,15 @@ h2{
 }
 .sub-title-white{
     color: $white;
+    @include respond-to($phone){
+        margin-left: 0.7em;
+    }
 }
 .sub-title-black{
     color: $black;
+    @include respond-to($phone){
+        margin-left: 0.7em;
+    }
 }
 /*TOP VAR*/
 .container-fluid{
@@ -34,6 +41,10 @@ h2{
     font-weight: 700;
     position: fixed;
     z-index: 9999999;
+
+    @include respond-to($phone){
+        height: 5em;
+    }
 }
 .top-nav{
     padding: 1.5em 0em 1.5em 0em;
@@ -49,16 +60,31 @@ h2{
 }
 .logo{
     margin: 1.5em;
+
+    @include respond-to($phone) {
+        width: 146,5px;
+        height: 22.5px;
+        position: relative;
+        right: 1em;
+    }
 }
 .bell{
     margin: 1em;
     position:relative;
     left: 47em;  
+
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 .user{
     margin: 1em;
     position:relative;
     left: 47em;
+
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 .bell:hover{
     cursor: pointer;
@@ -88,7 +114,13 @@ h2{
     right: 2em;
 }
 .img{
-    margin-top: 1em
+    margin-top: 1em;
+
+    @include respond-to($phone){
+        margin-top: 10em;
+        margin-bottom: 0%;
+        padding: 0%;
+    }
 }
 .subtitle{
     color: $black;
@@ -96,6 +128,11 @@ h2{
     font-weight: 700;
     font-size: 18pt;
     margin: 1em 0em 1em 0em;
+
+    @include respond-to($phone){
+        margin-left: 0.7em;
+        margin-top: 0em;
+    }
 }
 .icon18{
     position: relative;
@@ -107,6 +144,10 @@ h2{
     font-weight: 600;
     font-size: 14pt;
     color: $black;
+
+    @include respond-to($phone){
+        margin-left: 0.9em;
+    }
 }
 /*STPES FORM*/
 .nav-steps{
@@ -114,6 +155,14 @@ h2{
     position: relative;
     right: 2.5em;
     bottom: 0.5em;
+
+    @include respond-to($phone){
+        position: relative;
+        bottom: 43em;
+        margin-bottom: 2em;
+        margin: 0em 0.5em 1em 0.7em;
+        padding: 0em 1em;
+    }
     }
 .nav-link{
     color: $white;
@@ -122,6 +171,11 @@ h2{
     font-weight: 400;
     text-decoration: none;
     margin-right: 1em;
+
+    @include respond-to($phone){
+        margin: 0%;
+        padding: 0%;
+    }
 }
 .nav-link:hover{
     color: $white;
@@ -133,6 +187,11 @@ h2{
     font-weight: 400;
     text-decoration: none;
     margin-right: 1em;
+
+    @include respond-to($phone){
+        margin: 0%;
+        padding: 0%;
+    }
 }
 .nav-link2:hover{
     color: $black;
@@ -153,6 +212,11 @@ h2{
     padding-left: 0%;
     position: relative;
     right: 1.5em;
+
+    @include respond-to($phone){
+        position: relative;
+        left: 0.7em;
+    }
 }
 .text-field{
     width: 95%;
@@ -161,10 +225,21 @@ h2{
     font-size: 14px;
     font-family: $lato;
     outline: none;
+
+    @include respond-to($phone){
+        font-size: 14pt;
+    }
 }
 /*LABELS*/
 
 /*SLIDER*/
+.slidecontainer{
+
+    @include respond-to($phone){
+        position: relative;
+        left: 1.5em;
+    }
+}
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -195,7 +270,12 @@ h2{
     text-decoration: none;
     width: 40%;
     position: relative;
-    top: 2em;
+    top: 1em;
+
+    @include respond-to($phone){
+        top: 27.9em;
+        left: 0.5em;
+    }
 }
 .btn-return:hover{
     color: $white;
@@ -212,6 +292,11 @@ h2{
     width: 20%;
     position: relative;
     top: 12em;
+
+    @include respond-to($phone){
+        top: 5em;
+        left: 11em;
+    }
 }
 .btn-book:hover{
     color: $white;
@@ -227,6 +312,12 @@ h2{
     padding: 3em 0em 3em 5.5em;
     position: relative;
     top: 20em;
+
+    @include respond-to($phone){
+        top: 24em;
+        width: 34em;
+        padding: 3em 0em 3em 2em;
+    }
 }
 .bottom-nav-item{
     padding: 0em;
@@ -253,9 +344,3 @@ h2{
     margin: 0em 1em 0em 1em;
 }
 /*FOOTER*/
-
-@media only screen and (max-width: 600px) {
-    .top-var{
-        height: 1em;
-    }
-  }

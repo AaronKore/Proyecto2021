@@ -13,9 +13,19 @@ h2 {
 .sub-title-white {
   color: #EDE9E5;
 }
+@media only screen and (max-width: 375px) {
+  .sub-title-white {
+    margin-left: 0.7em;
+  }
+}
 
 .sub-title-black {
   color: #333333;
+}
+@media only screen and (max-width: 375px) {
+  .sub-title-black {
+    margin-left: 0.7em;
+  }
 }
 
 /*TOP VAR*/
@@ -32,6 +42,11 @@ h2 {
   font-weight: 700;
   position: fixed;
   z-index: 9999999;
+}
+@media only screen and (max-width: 375px) {
+  .top-var {
+    height: 5em;
+  }
 }
 
 .top-nav {
@@ -51,17 +66,35 @@ h2 {
 .logo {
   margin: 1.5em;
 }
+@media only screen and (max-width: 375px) {
+  .logo {
+    width: 146, 5px;
+    height: 22.5px;
+    position: relative;
+    right: 1em;
+  }
+}
 
 .bell {
   margin: 1em;
   position: relative;
   left: 47em;
 }
+@media only screen and (max-width: 375px) {
+  .bell {
+    display: none;
+  }
+}
 
 .user {
   margin: 1em;
   position: relative;
   left: 47em;
+}
+@media only screen and (max-width: 375px) {
+  .user {
+    display: none;
+  }
 }
 
 .bell:hover {
@@ -98,6 +131,13 @@ h2 {
 .img {
   margin-top: 1em;
 }
+@media only screen and (max-width: 375px) {
+  .img {
+    margin-top: 10em;
+    margin-bottom: 0%;
+    padding: 0%;
+  }
+}
 
 .subtitle {
   color: #333333;
@@ -105,6 +145,12 @@ h2 {
   font-weight: 700;
   font-size: 18pt;
   margin: 1em 0em 1em 0em;
+}
+@media only screen and (max-width: 375px) {
+  .subtitle {
+    margin-left: 0.7em;
+    margin-top: 0em;
+  }
 }
 
 .icon18 {
@@ -119,6 +165,11 @@ h2 {
   font-size: 14pt;
   color: #333333;
 }
+@media only screen and (max-width: 375px) {
+  .important {
+    margin-left: 0.9em;
+  }
+}
 
 /*STPES FORM*/
 .nav-steps {
@@ -126,6 +177,15 @@ h2 {
   position: relative;
   right: 2.5em;
   bottom: 0.5em;
+}
+@media only screen and (max-width: 375px) {
+  .nav-steps {
+    position: relative;
+    bottom: 43em;
+    margin-bottom: 2em;
+    margin: 0em 0.5em 1em 0.7em;
+    padding: 0em 1em;
+  }
 }
 
 .nav-link {
@@ -135,6 +195,12 @@ h2 {
   font-weight: 400;
   text-decoration: none;
   margin-right: 1em;
+}
+@media only screen and (max-width: 375px) {
+  .nav-link {
+    margin: 0%;
+    padding: 0%;
+  }
 }
 
 .nav-link:hover {
@@ -148,6 +214,12 @@ h2 {
   font-weight: 400;
   text-decoration: none;
   margin-right: 1em;
+}
+@media only screen and (max-width: 375px) {
+  .nav-link2 {
+    margin: 0%;
+    padding: 0%;
+  }
 }
 
 .nav-link2:hover {
@@ -171,6 +243,12 @@ h2 {
   position: relative;
   right: 1.5em;
 }
+@media only screen and (max-width: 375px) {
+  .labels {
+    position: relative;
+    left: 0.7em;
+  }
+}
 
 .text-field {
   width: 95%;
@@ -180,9 +258,21 @@ h2 {
   font-family: "Lato", sans-serif;
   outline: none;
 }
+@media only screen and (max-width: 375px) {
+  .text-field {
+    font-size: 14pt;
+  }
+}
 
 /*LABELS*/
 /*SLIDER*/
+@media only screen and (max-width: 375px) {
+  .slidecontainer {
+    position: relative;
+    left: 1.5em;
+  }
+}
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -213,7 +303,13 @@ h2 {
   text-decoration: none;
   width: 40%;
   position: relative;
-  top: 2em;
+  top: 1em;
+}
+@media only screen and (max-width: 375px) {
+  .btn-return {
+    top: 27.9em;
+    left: 0.5em;
+  }
 }
 
 .btn-return:hover {
@@ -233,6 +329,12 @@ h2 {
   position: relative;
   top: 12em;
 }
+@media only screen and (max-width: 375px) {
+  .btn-book {
+    top: 5em;
+    left: 11em;
+  }
+}
 
 .btn-book:hover {
   color: #EDE9E5;
@@ -248,6 +350,13 @@ h2 {
   padding: 3em 0em 3em 5.5em;
   position: relative;
   top: 20em;
+}
+@media only screen and (max-width: 375px) {
+  .footer {
+    top: 24em;
+    width: 34em;
+    padding: 3em 0em 3em 2em;
+  }
 }
 
 .bottom-nav-item {
@@ -280,8 +389,3 @@ h2 {
 }
 
 /*FOOTER*/
-@media only screen and (max-width: 600px) {
-  .top-var {
-    height: 1em;
-  }
-}

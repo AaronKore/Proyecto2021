@@ -9,13 +9,30 @@ h2 {
   font-weight: 700;
   font-size: 24pt;
 }
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 18pt;
+  }
+}
 
 .sub-title-white {
   color: #EDE9E5;
 }
+@media only screen and (max-width: 480px) {
+  .sub-title-white {
+    position: relative;
+    right: 2.2;
+  }
+}
 
 .sub-title-black {
   color: #333333;
+}
+@media only screen and (max-width: 480px) {
+  .sub-title-black {
+    position: relative;
+    right: 2.2;
+  }
 }
 
 /*TOP VAR*/
@@ -33,6 +50,13 @@ h2 {
   position: fixed;
   z-index: 9999999;
 }
+@media only screen and (max-width: 480px) {
+  .top-var {
+    width: 23.8em;
+    height: 5em;
+    padding: 0em 0em 5em 0em;
+  }
+}
 
 .top-nav {
   padding: 1.5em 0em 1.5em 0em;
@@ -47,9 +71,22 @@ h2 {
   margin: 0%;
   display: inline-block;
 }
+@media only screen and (max-width: 480px) {
+  .top-nav-item {
+    display: none;
+  }
+}
 
 .logo {
   margin: 1.5em;
+}
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 146, 5px;
+    height: 22.5px;
+    position: relative;
+    right: 1em;
+  }
 }
 
 .bell {
@@ -57,11 +94,21 @@ h2 {
   position: relative;
   left: 47em;
 }
+@media only screen and (max-width: 480px) {
+  .bell {
+    display: none;
+  }
+}
 
 .user {
   margin: 1em;
   position: relative;
   left: 47em;
+}
+@media only screen and (max-width: 480px) {
+  .user {
+    display: none;
+  }
 }
 
 #icon-pointer:hover {
@@ -95,6 +142,15 @@ h2 {
   top: 5em;
   margin-top: 2em;
 }
+@media only screen and (max-width: 480px) {
+  .img {
+    width: 444px;
+    height: 265px;
+    position: relative;
+    left: 3em;
+    top: 0em;
+  }
+}
 
 .title {
   font-family: "Lato", sans-serif;
@@ -104,6 +160,11 @@ h2 {
   text-align: center;
   margin-top: 0.2em;
 }
+@media only screen and (max-width: 480px) {
+  .title {
+    margin-left: 1em;
+  }
+}
 
 .txt {
   font-family: "Lato", sans-serif;
@@ -111,6 +172,12 @@ h2 {
   font-size: 20pt;
   color: #333333;
   text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .txt {
+    padding: 0em 2em;
+    margin-left: 2em;
+  }
 }
 
 /*FOOTER*/
@@ -123,6 +190,12 @@ h2 {
   padding: 3em 0em 3em 5.5em;
   position: relative;
   top: 20em;
+}
+@media only screen and (max-width: 480px) {
+  .footer {
+    top: 23em;
+    padding: 3em 0em 3em 2em;
+  }
 }
 
 .bottom-nav-item {

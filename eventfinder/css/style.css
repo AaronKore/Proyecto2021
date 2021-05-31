@@ -9,13 +9,30 @@ h2 {
   font-weight: 700;
   font-size: 24pt;
 }
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 18pt;
+  }
+}
 
 .sub-title-white {
   color: #EDE9E5;
 }
+@media only screen and (max-width: 480px) {
+  .sub-title-white {
+    position: relative;
+    right: 2.2;
+  }
+}
 
 .sub-title-black {
   color: #333333;
+}
+@media only screen and (max-width: 480px) {
+  .sub-title-black {
+    position: relative;
+    right: 2.2;
+  }
 }
 
 /*TOP VAR*/
@@ -33,6 +50,13 @@ h2 {
   position: fixed;
   z-index: 9999999;
 }
+@media only screen and (max-width: 480px) {
+  .top-var {
+    width: 23.8em;
+    height: 5em;
+    position: fixed;
+  }
+}
 
 .top-nav {
   padding: 1.5em 0em 1.5em 0em;
@@ -47,9 +71,22 @@ h2 {
   margin: 0%;
   display: inline-block;
 }
+@media only screen and (max-width: 480px) {
+  .top-nav-item {
+    display: none;
+  }
+}
 
 .logo {
   margin: 1.5em;
+}
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 146, 5px;
+    height: 22.5px;
+    position: relative;
+    right: 1em;
+  }
 }
 
 .bell {
@@ -57,11 +94,21 @@ h2 {
   position: relative;
   left: 47em;
 }
+@media only screen and (max-width: 480px) {
+  .bell {
+    display: none;
+  }
+}
 
 .user {
   margin: 1em;
   position: relative;
   left: 47em;
+}
+@media only screen and (max-width: 480px) {
+  .user {
+    display: none;
+  }
 }
 
 .bell:hover {
@@ -96,7 +143,12 @@ h2 {
   text-align: center;
   color: #EDE9E5;
   padding: 6em 1em 6.5em 0em;
-  size: 1920 1080;
+}
+@media only screen and (max-width: 480px) {
+  .cover-page-img {
+    height: 35em;
+    width: 23.5em;
+  }
 }
 
 .cover-text1 {
@@ -106,11 +158,24 @@ h2 {
   line-height: 2em;
   margin-top: 2em;
 }
+@media only screen and (max-width: 480px) {
+  .cover-text1 {
+    line-height: 2em;
+    margin-top: 1.5em;
+    font-size: 15pt;
+  }
+}
 
 .cover-text2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 29pt;
+}
+@media only screen and (max-width: 480px) {
+  .cover-text2 {
+    margin-top: 0.5em;
+    font-size: 18pt;
+  }
 }
 
 .searcher {
@@ -126,11 +191,24 @@ h2 {
   opacity: 60%;
   z-index: 0;
 }
+@media only screen and (max-width: 480px) {
+  .searcher {
+    padding: 0.1em;
+    width: 90%;
+    margin-top: 2em;
+    font-size: 18pt;
+  }
+}
 
 .lupa {
   position: relative;
-  left: 40em;
+  left: 44em;
   z-index: 1;
+}
+@media only screen and (max-width: 480px) {
+  .lupa {
+    display: none;
+  }
 }
 
 .lupa:hover {
@@ -142,6 +220,11 @@ h2 {
 .coming-section {
   padding: 3em 0em 0em 4em;
 }
+@media only screen and (max-width: 480px) {
+  .coming-section {
+    padding: 3em 0em 0em 0.7em;
+  }
+}
 
 .bold-img {
   color: #333333;
@@ -152,6 +235,12 @@ h2 {
 .img-padding {
   padding: 1em 4.3em;
 }
+@media only screen and (max-width: 480px) {
+  .img-padding {
+    position: relative;
+    right: 6em;
+  }
+}
 
 .img-size {
   width: 208px;
@@ -160,15 +249,30 @@ h2 {
   cursor: pointer;
   margin: 0em 1.6em 1em 0em;
 }
+@media only screen and (max-width: 480px) {
+  .img-size {
+    width: 323px;
+    height: 323px;
+  }
+}
 
 .mayor-edad {
   position: relative;
   z-index: 5;
   margin: 0%;
   padding: 0%;
-  bottom: 12.5em;
+  bottom: 12em;
   left: 8.5em;
   cursor: pointer;
+}
+@media only screen and (max-width: 480px) {
+  .mayor-edad {
+    width: 88px;
+    height: 88px;
+    position: relative;
+    bottom: 17.5em;
+    left: 13.5em;
+  }
 }
 
 /*COMING SOON*/
@@ -176,6 +280,12 @@ h2 {
 .recent-events-section {
   background: #4D798F;
   padding: 3em 0em 3em 4em;
+}
+@media only screen and (max-width: 480px) {
+  .recent-events-section {
+    padding: 3em 0em 3em 0.7em;
+    width: 24.2em;
+  }
 }
 
 .recent-events-txt {
@@ -196,6 +306,12 @@ h2 {
   font-size: 14pt;
   text-decoration: none;
 }
+@media only screen and (max-width: 480px) {
+  .btn-see-more {
+    position: relative;
+    top: 11em;
+  }
+}
 
 .btn-see-more:hover {
   color: #EDE9E5;
@@ -204,7 +320,13 @@ h2 {
 .video {
   position: relative;
   left: 4.5em;
-  top: 2em;
+  bottom: 4em;
+}
+@media only screen and (max-width: 480px) {
+  .video {
+    position: relative;
+    left: 0em;
+  }
 }
 
 /*RECENT EVENTS*/
@@ -212,6 +334,12 @@ h2 {
 .stay-tune-section {
   background: url(../img/redes.png);
   padding: 3em 0em 5.8em 4em;
+}
+@media only screen and (max-width: 480px) {
+  .stay-tune-section {
+    padding: 3em 0em 2em 0.7em;
+    width: 24.2em;
+  }
 }
 
 .stay-tune-txt {
@@ -225,19 +353,42 @@ h2 {
   position: relative;
   top: 3em;
 }
+@media only screen and (max-width: 480px) {
+  .stay-tune-txt-position {
+    position: relative;
+    top: 0em;
+  }
+}
 
 .stay-tune-icons-position {
   margin-left: 20em;
 }
+@media only screen and (max-width: 480px) {
+  .stay-tune-icons-position {
+    margin-left: 1em;
+  }
+}
 
 .stay-tune-icons {
   margin: 5em 7em 0em 0em;
+}
+@media only screen and (max-width: 480px) {
+  .stay-tune-icons {
+    margin: 2em 1.8em 0em 0em;
+    width: 31px;
+    height: 28px;
+  }
 }
 
 /*STAY TUNE*/
 /*SHARE*/
 .share-section {
   padding: 3em 0em 2em 4em;
+}
+@media only screen and (max-width: 480px) {
+  .share-section {
+    padding: 3em 0em 2em 0.7em;
+  }
 }
 
 .share-text {
@@ -265,6 +416,13 @@ h2 {
   width: 1370px;
   height: 600px;
 }
+@media only screen and (max-width: 480px) {
+  .contact-section {
+    padding: 3em 0em 0em 0.7em;
+    width: 24.2em;
+    height: 600px;
+  }
+}
 
 .labels {
   color: #EDE9E5;
@@ -280,6 +438,12 @@ h2 {
   position: relative;
   top: 5em;
 }
+@media only screen and (max-width: 480px) {
+  .contact-text {
+    position: relative;
+    top: 0.5em;
+  }
+}
 
 .text-field {
   width: 75%;
@@ -291,6 +455,11 @@ h2 {
   border: none;
   outline: none;
 }
+@media only screen and (max-width: 480px) {
+  .text-field {
+    font-size: 14pt;
+  }
+}
 
 .message-txtField {
   margin: 0em 0em 3em 1em;
@@ -300,6 +469,12 @@ h2 {
   font-family: "Lato", sans-serif;
   border: none;
   outline: none;
+}
+@media only screen and (max-width: 480px) {
+  .message-txtField {
+    height: 6em;
+    font-size: 14pt;
+  }
 }
 
 .btn-message {
@@ -313,6 +488,11 @@ h2 {
   text-decoration: none;
   width: 20%;
   margin-left: 0.8em;
+}
+@media only screen and (max-width: 480px) {
+  .btn-message {
+    width: 70%;
+  }
 }
 
 .btn-message:hover {
@@ -328,6 +508,12 @@ h2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   padding: 3em 0em 3em 5.5em;
+}
+@media only screen and (max-width: 480px) {
+  .footer {
+    padding: 3em 0em 3em 1em;
+    width: 32.3em;
+  }
 }
 
 .bottom-nav-item {
@@ -360,9 +546,3 @@ h2 {
 }
 
 /*FOOTER*/
-@media only screen and (max-width: 600px) {
-  .top-var {
-    height: 5em;
-    width: 100%;
-  }
-}

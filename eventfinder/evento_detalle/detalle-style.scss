@@ -6,6 +6,8 @@ $light-blue: #00B8B3;
 $white: #EDE9E5;
 $black: #333333;
 $lato: 'Lato', sans-serif;
+@import 'media-queries';
+
 body{
     background: $white;
     overflow-x: hidden;
@@ -17,9 +19,17 @@ h2{
 }
 .sub-title-white{
     color: $white;
+
+    @include respond-to($phone){
+        margin-left: 0.7em;
+    }
 }
 .sub-title-black{
     color: $black;
+
+    @include respond-to($phone){
+        margin-left: 0.7em;
+    }
 }
 /*TOP VAR*/
 .container-fluid{
@@ -34,6 +44,10 @@ h2{
     font-weight: 700;
     position: fixed;
     z-index: 9999999;
+
+    @include respond-to($phone){
+        height: 5em;
+    }
 }
 .top-nav{
     padding: 1.5em 0em 1.5em 0em;
@@ -49,16 +63,31 @@ h2{
 }
 .logo{
     margin: 1.5em;
+
+    @include respond-to($phone) {
+        width: 146,5px;
+        height: 22.5px;
+        position: relative;
+        right: 1em;
+    }
 }
 .bell{
     margin: 1em;
     position:relative;
     left: 47em;  
+
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 .user{
     margin: 1em;
     position:relative;
     left: 47em;
+
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 #icon-pointer:hover{
     cursor: pointer;
@@ -109,17 +138,39 @@ h2{
     font-family: $lato;
     font-weight: 700;
     font-size: 18pt;
+
+    @include respond-to($phone){
+        margin-left: 0.7em;
+    }
 }
 p{
     font-family: $lato;
     font-weight: 400;
     color: $black;
+
+    @include respond-to($phone){
+        position: relative;
+        bottom: 3em;
+        margin: 0%;
+        padding: 0%;
+    }
+}
+.move-around{
+    @include respond-to($phone){
+        margin-top: 3.5em;
+        margin-left: 1.2em;
+        margin-bottom: 2em;
+    }
 }
 .important{
     font-family: $lato;
     font-weight: 600;
     font-size: 14pt;
     color: $black;
+
+    @include respond-to($phone){
+        margin-left: 1.2em;
+    }
 }
 .btn{
     background: $pink;
@@ -128,6 +179,10 @@ p{
     font-weight: 700;
     font-size: 18;
     width: 50%;
+
+    @include respond-to($phone){
+        margin-left: 1.2em;
+    }
 }
 .btn:hover{
     color: $white;
@@ -142,6 +197,10 @@ p{
     padding: 3em 0em 3em 5.5em;
     position: relative;
     top: 12em;
+
+    @include respond-to($phone){
+        padding: 3em 0em 3em 1.7em;
+    }
 }
 .bottom-nav-item{
     padding: 0em;
@@ -168,9 +227,3 @@ p{
     margin: 0em 1em 0em 1em;
 }
 /*FOOTER*/
-
-@media only screen and (max-width: 600px) {
-    .top-var{
-        height: 1em;
-    }
-  }

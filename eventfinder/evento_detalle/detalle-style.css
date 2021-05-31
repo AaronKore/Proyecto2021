@@ -13,9 +13,19 @@ h2 {
 .sub-title-white {
   color: #EDE9E5;
 }
+@media only screen and (max-width: 375px) {
+  .sub-title-white {
+    margin-left: 0.7em;
+  }
+}
 
 .sub-title-black {
   color: #333333;
+}
+@media only screen and (max-width: 375px) {
+  .sub-title-black {
+    margin-left: 0.7em;
+  }
 }
 
 /*TOP VAR*/
@@ -32,6 +42,11 @@ h2 {
   font-weight: 700;
   position: fixed;
   z-index: 9999999;
+}
+@media only screen and (max-width: 375px) {
+  .top-var {
+    height: 5em;
+  }
 }
 
 .top-nav {
@@ -51,17 +66,35 @@ h2 {
 .logo {
   margin: 1.5em;
 }
+@media only screen and (max-width: 375px) {
+  .logo {
+    width: 146, 5px;
+    height: 22.5px;
+    position: relative;
+    right: 1em;
+  }
+}
 
 .bell {
   margin: 1em;
   position: relative;
   left: 47em;
 }
+@media only screen and (max-width: 375px) {
+  .bell {
+    display: none;
+  }
+}
 
 .user {
   margin: 1em;
   position: relative;
   left: 47em;
+}
+@media only screen and (max-width: 375px) {
+  .user {
+    display: none;
+  }
 }
 
 #icon-pointer:hover {
@@ -121,11 +154,32 @@ h2 {
   font-weight: 700;
   font-size: 18pt;
 }
+@media only screen and (max-width: 375px) {
+  .subtitle {
+    margin-left: 0.7em;
+  }
+}
 
 p {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #333333;
+}
+@media only screen and (max-width: 375px) {
+  p {
+    position: relative;
+    bottom: 3em;
+    margin: 0%;
+    padding: 0%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .move-around {
+    margin-top: 3.5em;
+    margin-left: 1.2em;
+    margin-bottom: 2em;
+  }
 }
 
 .important {
@@ -133,6 +187,11 @@ p {
   font-weight: 600;
   font-size: 14pt;
   color: #333333;
+}
+@media only screen and (max-width: 375px) {
+  .important {
+    margin-left: 1.2em;
+  }
 }
 
 .btn {
@@ -142,6 +201,11 @@ p {
   font-weight: 700;
   font-size: 18;
   width: 50%;
+}
+@media only screen and (max-width: 375px) {
+  .btn {
+    margin-left: 1.2em;
+  }
 }
 
 .btn:hover {
@@ -158,6 +222,11 @@ p {
   padding: 3em 0em 3em 5.5em;
   position: relative;
   top: 12em;
+}
+@media only screen and (max-width: 375px) {
+  .footer {
+    padding: 3em 0em 3em 1.7em;
+  }
 }
 
 .bottom-nav-item {
@@ -190,8 +259,3 @@ p {
 }
 
 /*FOOTER*/
-@media only screen and (max-width: 600px) {
-  .top-var {
-    height: 1em;
-  }
-}

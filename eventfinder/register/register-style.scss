@@ -6,6 +6,8 @@ $light-blue: #00B8B3;
 $white: #EDE9E5;
 $black: #333333;
 $lato: 'Lato', sans-serif;
+@import 'media-queries';
+
 body{
     background: $white;
     overflow-x: hidden;
@@ -14,12 +16,26 @@ h2{
     font-family: $lato;
     font-weight: 700;
     font-size: 24pt;
+
+    @include respond-to($phone){
+        font-size: 18pt;
+    }
 }
 .sub-title-white{
     color: $white;
+
+    @include respond-to($phone){
+        position: relative;
+        right: 2.2;
+    }
 }
 .sub-title-black{
     color: $black;
+
+    @include respond-to($phone){
+        position: relative;
+        right: 2.2;
+    }
 }
 /*TOP VAR*/
 .container-fluid{
@@ -34,6 +50,13 @@ h2{
     font-weight: 700;
     position: fixed;
     z-index: 9999999;
+
+    @include respond-to($phone){
+        width: 23.8em;
+        height: 5em;
+        position: fixed;
+        padding-bottom: 5em;
+    }
 }
 .top-nav{
     padding: 1.5em 0em 1.5em 0em;
@@ -49,16 +72,31 @@ h2{
 }
 .logo{
     margin: 1.5em;
+
+    @include respond-to($phone) {
+        width: 146,5px;
+        height: 22.5px;
+        position: relative;
+        right: 1em;
+    }
 }
 .bell{
     margin: 1em;
     position:relative;
     left: 47em;  
+
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 .user{
     margin: 1em;
     position:relative;
     left: 47em;
+
+    @include respond-to($phone) {
+        display: none;
+    }
 }
 #icon-pointer:hover{
     cursor: pointer;
@@ -80,6 +118,11 @@ h2{
     margin-top: 8em;
     position: relative;
     right: 3em;
+
+    @include respond-to($phone){
+        position: relative;
+        right: 1em;
+    }
 }
 .labels{
     color: $black;
@@ -94,6 +137,10 @@ h2{
     font-family: $lato;
     outline: none;
     padding: 0%;
+    
+    @include respond-to($phone){
+        font-size: 14pt;
+    }
 }
 .icons{
     margin: 0em 1em 2em 0em;
@@ -122,6 +169,10 @@ h2{
     background: $pink;
     margin: 0%;
     width: 50%;
+
+    @include respond-to($phone){
+        margin-top: 5em;
+    }
 }
 .btn:hover{
     color: $white;
@@ -136,6 +187,12 @@ h2{
     font-weight: 700;
     padding: 3em 0em 3em 5.5em;
     margin-top: 2em;
+
+    @include respond-to($phone){
+        padding: 3em 0em 3em 1em;
+        margin-top: 10em;
+
+    }
 }
 .bottom-nav-item{
     padding: 0em;
