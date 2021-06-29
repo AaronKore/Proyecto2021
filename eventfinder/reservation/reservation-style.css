@@ -327,11 +327,11 @@ h2 {
   text-decoration: none;
   width: 20%;
   position: relative;
-  top: 12em;
+  top: 10.8em;
 }
 @media only screen and (max-width: 375px) {
   .btn-book {
-    top: 5em;
+    top: 4em;
     left: 11em;
   }
 }

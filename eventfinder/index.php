@@ -26,6 +26,7 @@
     <div class="container-fluid">
         <nav class="top-var">
             <img src="./img/logo.png" alt="Logo de Event Finder" class="logo">
+            <img src="./img/mobileLogo.png" alt="logo mobile" class="mobileLogo">
             <a href="#"><img src="./img/bell.png" alt="icono de campana" class=" bell"></a>
             <a href="./register/register.html"><img src="./img/user.png" alt="Icono de usuario" class="user"></a>
             <ul class="top-nav">
@@ -36,8 +37,28 @@
                 <li class="top-nav-item"><a href="./register/register.html" class="link-nav"><span
                             class="pink-Square-item">REGISTER</span> </a></li>
             </ul>
+            <!--MOBILE-->
+            <div class="icono-menu">
+                <img src="./img/menu.png" alt="icono menu" id="hambuerguesa" class="hambuerguesa">
+        
+                <div class="cont-menu active" id="menu">
+                    <ul class="cont-menu ul li">
+                        <li><a id="Menu" href="./index.html">HOME</a></li>
+                        <li><a id="Menu" href="./categories/categories.html">CATEGORIES</a></li>
+                        <li><a id="Menu" href="./register/register.html">REGISTER</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <script src="home.js">
+        
+            </script>
+            <!--MOBILE-->
         </nav>
     </div>
+
+
+
     <!--TOP VAR-->
 
     <!--COVER PAGE-->
@@ -58,6 +79,7 @@
             <div class="row">
                 <div class="col-sm-3 ">
                     <img src="./img/ev2.jpg" alt="imagen sobre caridad" class="img-size">
+
                     <p><span class="bold-img">Lorem ipsum dolor sit amet </span> <br>
                         Esparza, Puntarenas / May 21st <br>
                         8am - 12md <br>
@@ -84,7 +106,8 @@
                 </div>
 
                 <div class="col-sm-3 ">
-                    <a href="./evento_detalle/detalle.html"><img src="./img/ev4.jpg" alt="imagen sobre musica" class="img-size"></a>
+                    <a href="./evento_detalle/detalle.html"><img src="./img/ev4.jpg" alt="imagen sobre musica"
+                            class="img-size"></a>
                     <p><span class="bold-img">Lorem ipsum dolor sit amet </span> <br>
                         La Sabana, San José May 20th <br>
                         7pm - 11pm <br>
@@ -122,11 +145,14 @@
                 </div>
 
                 <div class="col-sm video">
-                    <div style="padding:75% 0 0 0;position:relative;"><iframe
+                    <div style="padding:75% 0 0 0;position:relative;">
+                        <iframe
                             src="https://player.vimeo.com/video/549781270?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                             frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
                             style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                            title="Video resumen Evento 35 Aniversario Cerviglas.mp4"></iframe></div>
+                            title="Video resumen Evento 35 Aniversario Cerviglas.mp4">
+                        </iframe>
+                    </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                 </div>
             </div>
@@ -239,9 +265,10 @@
                 <ul class="margin-bottom">
                     <li class="bottom-nav-item"><a class="bottom-nav-link" href="./index.html">HOME <span
                                 class="bottom-simbol">|</span></a></li>
-                    <li class="bottom-nav-item"><a class="bottom-nav-link" href="./categories/categories.html">CATEGORIES<span
-                                class="bottom-simbol">|</span></a></li>
-                    <li class="bottom-nav-item"><a class="bottom-nav-link" href="./register/register.html">REGISTER</a></li>
+                    <li class="bottom-nav-item"><a class="bottom-nav-link"
+                            href="./categories/categories.html">CATEGORIES<span class="bottom-simbol">|</span></a></li>
+                    <li class="bottom-nav-item"><a class="bottom-nav-link" href="./register/register.html">REGISTER</a>
+                    </li>
                 </ul>
             </nav>
         </div>

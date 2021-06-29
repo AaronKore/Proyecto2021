@@ -48,7 +48,7 @@ h2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   position: fixed;
-  z-index: 9999999;
+  z-index: 99999;
 }
 @media only screen and (max-width: 480px) {
   .top-var {
@@ -82,10 +82,20 @@ h2 {
 }
 @media only screen and (max-width: 480px) {
   .logo {
-    width: 146, 5px;
-    height: 22.5px;
-    position: relative;
-    right: 1em;
+    display: none;
+  }
+}
+
+.mobileLogo {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .mobileLogo {
+    display: initial;
+    width: 25px;
+    height: 32px;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
   }
 }
 
@@ -134,6 +144,81 @@ h2 {
   font-size: 14pt;
 }
 
+/*menuHamburguesa*/
+.hambuerguesa {
+  z-index: 9999999;
+  position: relative;
+  vertical-align: top;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  bottom: 5.5em;
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .hambuerguesa {
+    position: relative;
+    left: 2.5em;
+    margin-top: 3.5em;
+    display: initial;
+  }
+}
+
+.cont-menu {
+  background-color: rgba(47, 64, 86, 0.85);
+  -webkit-box-shadow: #424242;
+          box-shadow: #424242;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 3333333;
+}
+
+.cont-menu ul {
+  padding: 100px 0px 20px 0px;
+  list-style: none;
+}
+
+.cont-menu ul li {
+  color: #EDE9E5;
+  display: block;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.cont-menu ul li:hover {
+  background-color: #4D798F;
+}
+
+#Menu {
+  text-decoration: none;
+  color: #EDE9E5;
+}
+
+/*para JS*/
+.active {
+  -webkit-transform: translate(-600px);
+          transform: translate(-600px);
+}
+
+.opacity {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/*para JS*/
+/*menuHamburguesa*/
 /*TOP VAR*/
 /*GLOBAL*/
 /*HOME PAGE*/
@@ -202,7 +287,7 @@ h2 {
 
 .lupa {
   position: relative;
-  left: 44em;
+  left: 40.5em;
   z-index: 1;
 }
 @media only screen and (max-width: 480px) {
@@ -413,7 +498,7 @@ h2 {
 .contact-section {
   background: url(../img/contact.png);
   padding: 3em 0em 0em 4em;
-  width: 1370px;
+  width: 1510px;
   height: 600px;
 }
 @media only screen and (max-width: 480px) {

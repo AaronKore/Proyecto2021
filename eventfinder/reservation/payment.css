@@ -292,12 +292,12 @@ h2 {
   text-decoration: none;
   width: 40%;
   position: relative;
-  top: 15.8em;
+  top: 15.5em;
 }
 @media only screen and (max-width: 375px) {
   .btn-buy {
     position: relative;
-    top: 5em;
+    top: 4.35em;
     left: 11.5em;
   }
 }
